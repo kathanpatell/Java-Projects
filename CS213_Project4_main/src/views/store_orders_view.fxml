@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0"
+            prefWidth="547.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.Store_Orders_View_Controller">
+    <center>
+        <AnchorPane prefHeight="659.0" prefWidth="547.0" style="-fx-background-color: #1E1E1E;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <ListView fx:id="list_view_for_store_orders" layoutX="22.0" layoutY="39.0" prefHeight="576.0"
+                          prefWidth="504.0" style="-fx-background-color: #333333#333333;">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </ListView>
+                <HBox layoutY="614.0" prefHeight="65.0" prefWidth="547.0">
+                    <children>
+                        <Button fx:id="remove_order_from_store_orders_button" mnemonicParsing="false"
+                                onAction="#remove_order_from_store_order" text="Remove Order">
+                            <font>
+                                <Font size="15.0"/>
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                            <HBox.margin>
+                                <Insets left="170.0" top="15.0"/>
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="export_store_orders_button" mnemonicParsing="false"
+                                onAction="#export_store_orders" text="Export">
+                            <font>
+                                <Font size="15.0"/>
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                            <HBox.margin>
+                                <Insets left="25.0" top="15.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

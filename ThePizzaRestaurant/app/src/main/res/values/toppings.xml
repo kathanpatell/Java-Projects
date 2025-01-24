@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name ="toppings_array">
+        <item>Pepperoni</item>
+        <item>Ham</item>
+        <item>Pineapple</item>
+        <item>Onion</item>
+        <item>Pepper</item>
+        <item>Olives</item>
+        <item>Chicken</item>
+        <item>Sausage</item>
+        <item>Beef</item>
+        <item>Mushroom</item>
+    </string-array>
+</resources>

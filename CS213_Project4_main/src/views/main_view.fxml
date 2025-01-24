@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Main_View_Controller">
+    <center>
+        <AnchorPane fx:id="pizzaCompanyLogo" prefHeight="432.0" prefWidth="774.0" style="-fx-background-color: #1E1E1E;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="pizza_company_logo" fitHeight="277.0" fitWidth="350.0" layoutX="269.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../resources/pizza_logo.png" />
+                    </image>
+                </ImageView>
+                <HBox alignment="CENTER_RIGHT" layoutX="4.0" layoutY="366.0" prefHeight="46.0" prefWidth="665.0">
+                    <children>
+                        <Label prefHeight="46.0" prefWidth="439.0" text="Please click &quot;Enter Phone Number&quot; for every customer" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="enterNumberButton" mnemonicParsing="false" onAction="#initiate_order_for_number" prefHeight="44.0" prefWidth="208.0" text="Enter Phone Number" />
+                    </children>
+                </HBox>
+                <AnchorPane layoutY="444.0" prefHeight="124.0" prefWidth="774.0">
+                    <children>
+                        <Button fx:id="deluxe_pizza_button" contentDisplay="GRAPHIC_ONLY" layoutX="77.0" layoutY="-1.0" mnemonicParsing="false" onAction="#order_deluxe_pizza" prefHeight="145.0" prefWidth="177.0">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <graphic>
+                                <ImageView fx:id="deluxe_pizza_image" fitHeight="122.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../resources/deluxePizzaImage.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="hawaiian_pizza_button" layoutX="292.0" layoutY="-1.0" mnemonicParsing="false" onAction="#order_hawaiian_pizza" prefHeight="144.0" prefWidth="177.0">
+                            <graphic>
+                                <ImageView fx:id="hawaiian_pizza_image" fitHeight="111.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../resources/hawaiianPizzaImage.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button fx:id="pepperoni_pizza_button" contentDisplay="GRAPHIC_ONLY" layoutX="508.0" layoutY="-1.0" mnemonicParsing="false" onAction="#oder_pepperoni_pizza" prefHeight="144.0" prefWidth="177.0" text="Button">
+                            <graphic>
+                                <ImageView fx:id="pepperoni_pizza_image" fitHeight="123.0" fitWidth="167.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../resources/pepperoniPizzaImage.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <HBox layoutY="588.0" prefHeight="61.0" prefWidth="774.0">
+                    <children>
+                        <Label fx:id="deluxe_pizza_label" text="Deluxe Pizza" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="110.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label fx:id="hawaiian_pizza_label" text="Hawaiian Pizza" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="110.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label fx:id="pepperoni_pizza_label" text="Pepperoni Pizza" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="90.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox layoutY="625.0" prefHeight="106.0" prefWidth="774.0">
+                    <children>
+                        <Button fx:id="current_oder_button" mnemonicParsing="false" onAction="#check_current_order" text="Check Current Order">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <HBox.margin>
+                                <Insets left="170.0" top="25.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="store_orders_button" mnemonicParsing="false" onAction="#manage_store_orders" text="Manage Store Orders">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <HBox.margin>
+                                <Insets left="25.0" top="25.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <Label fx:id="customer_phone_number_label" layoutX="118.0" layoutY="268.0" prefHeight="88.0" prefWidth="330.0" text="Customer Phone Number:" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="customer_phone_number" layoutX="426.0" layoutY="282.0" prefHeight="45.0" prefWidth="267.0" promptText="Mobile Number">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </TextField>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
